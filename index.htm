@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+        }
+        header h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+        nav {
+            background: #0073e6;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background: #005bb5;
+            border-radius: 5px;
+        }
+        .main-content {
+            display: flex;
+            justify-content: center;
+            max-width: 1000px;
+            width: 100%;
+            margin: 20px;
+        }
+        .container {
+            flex: 2;
+            background: white;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .post {
+            margin-bottom: 20px;
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+        .post:last-child {
+            border-bottom: none;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: white;
+            margin-top: 20px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Simple Blog</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+    </nav>
+    <div class="main-content">
+        <div class="container">
+            <div class="post">
+                <h2>First Blog Post</h2>
+                <p><strong>March 8, 2025</strong></p>
+                <p>Welcome to my blog! This is my first post.</p>
+            </div>
+            <div class="post">
+                <h2>Another Blog Post</h2>
+                <p><strong>March 7, 2025</strong></p>
+                <p>Here are some thoughts on web development.</p>
+            </div>
+            <div class="post">
+                <h2>Learning HTML & CSS</h2>
+                <p><strong>March 6, 2025</strong></p>
+                <p>Today, I explored more about HTML and CSS and how they work together.</p>
+            </div>
+            <div class="post">
+                <h2>My Favorite Coding Tools</h2>
+                <p><strong>March 5, 2025</strong></p>
+                <p>Here are some of my favorite tools that I use for web development.</p>
+            </div>
+            <div class="post">
+                <h2>Why I Love Web Development</h2>
+                <p><strong>March 4, 2025</strong></p>
+                <p>Web development allows me to create and share amazing things on the internet.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 My Simple Blog</p>
+    </footer>
+</body>
+</html>
